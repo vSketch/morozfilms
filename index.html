@@ -128,22 +128,48 @@
         <p>Preserve your unforgettable experience with digitally. Blah Blah Give me some info</p>
         <form id="form-formspree" enctype="multipart/form-data">
           <fieldset>
-            <label for="">Name <label style="color: #c23e3e ;">*</label></label>
-            <input type="text" id="Name" name="Name" placeholder="Name" required="">
-            <label for="">Uhh <label style="color: #c23e3e ;">*</label></label>
-            <input type="text" id="Uhh" name="Uhh" placeholder="Uhh" required="">
+            <label for="">Your Name <label style="color: #c23e3e ;">*</label></label>
+            <input type="text" id="Name" name="Submitter's Name" placeholder="First and Last Name Nigga" required="">
+            <label for="">Partner's Name <label style="color: #c23e3e ;">*</label></label>
+            <input type="text" id="Name" name="Partener's Name" placeholder="First and Last Name Nigga" required="">
+            <!--label for="">Uhh <label style="color: #c23e3e ;">*</label></label>
+            <input type="text" id="Uhh" name="Uhh" placeholder="Uhh" required=""-->
             <label for="">Email <label style="color: #c23e3e ;">*</label></label>
-            <input type="email" id="Email" name="Email" placeholder="Email" required="">
+            <input type="email" id="Email" name="Email" placeholder="Or do you preffer phone as a method of contact? If so put &quot;Phone&quot;" required="">
             <label for="">Phone <label style="color: #c23e3e ;">*</label></label>
-            <input type="tel" id="Phone" name="Phone" placeholder="Phone" required="">
-            <label for="">Choice <label style="color: #c23e3e ;">*</label></label>
-            <select id="Choice" name="Choice" required="">
-              <option>Choice 1</option>
-              <option>Choice 2</option>
-              <option>Choice 3</option>
+            <input type="tel" id="Phone" name="Phone" inputmode="numeric" placeholder="(123)123-1234 or 8641230923" required="">
+            <!--label for="preference">Preferred method of contact</label>
+            <select id="Phone" name="Preferred method of contact:" size="2" multiple>
+              <option value="volvo">Email</option>
+              <option value="saab">Phone</option>
+            </select-->
+            <label for="Event Date">Wedding/Event Date: <label style="color: #c23e3e ;">*</label></label>
+            <input type="date" id="Event Date" name="Event Date:" required="">
+            <label for="Venue">Location/Venue <label style="color: #c23e3e ;">*</label></label>
+            <input type="Venue" id="Venue" name="Venue" placeholder="Where is your special event taking place?" required="">
+            <label for="Photographer">Who is your photographer? <label style="color: #c23e3e ;">*</label></label>
+            <input type="Photographer" id="Photographer" name="Photographer" placeholder="If you need some suggestions, let me know!" required="">
+            <label for="Vision">Describe your vision <label style="color: #c23e3e ;">*</label></label>
+            <textarea id="Vision" name="Vision" rows="3" placeholder="How would you like me to shoot it? For example; &quot;Keep it romanic but also cinematic with an emotional touch&quot;" class="full" required=""></textarea>
+            <label for="Duration">Duration <label style="color: #c23e3e ;">*</label></label>
+            <select id="Duration" name="Duration" required="">
+              <option disabled selected value>None Selected</option>
+              <option>All day</option>
+              <option>8 Hours</option>
+              <option>4 Hours</option>
             </select>
-            <label for="">Message <label style="color: #c23e3e ;">*</label></label>
-            <textarea id="Message" name="Message" rows="6" placeholder="Message" class="full" required=""></textarea>
+            <label for="Services">Service(s) <label style="color: #c23e3e ;">*</label></label>
+            <select id="Services" name="Services" required="">
+              <option disabled selected value>None Selected</option>
+              <option>4k Video Cinematic</option>
+              <option>4k Video + Vintage</option>
+              <option>4k Video Tradiational</option>
+            </select>
+            
+            <label for="Reference">How did you hear about me? <label style="color: #c23e3e ;">*</label></label>
+            <input type="Reference" id="Reference" name="Reference" placeholder="Was it through a friend, one of our socials, or someother way?" required="">
+            <label for="">Additional Notes</label>
+            <textarea id="Message" name="Message" rows="1" placeholder="What vendors are you working with or are there any other details you want to share? :&rpar;" class="full" required=""></textarea>
           </fieldset>
           <button> Submit </button>
           <input type="hidden" name="_cc" value="info@morozfilms.com">
