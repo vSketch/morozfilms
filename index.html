@@ -88,7 +88,7 @@
         <a class="terrains" href="https://morozfilms.com//" aria-label="lien"> Land Plots </a>
         <a class="carrieres" href="https://morozfilms.com//" aria-label="lien"> The Laurentides </a-->
         <a class="active-link contact" href="https://morozfilms.com/contact/" aria-label="lien"> Contact </a>
-        <a style="text-transform: uppercase;" class="lang" href="tel:+11231231234" aria-label="lien">(123) 123-1234</a>
+        <a style="text-transform: uppercase;" class="lang" href="tel:+18643847693" aria-label="lien">(864) 384-7693</a>
       </nav>
       <div class="burger-menu" onclick="toggleBurgerMenu(this);">
         <span></span>
@@ -109,7 +109,7 @@
               <a href="mailto:info@morozfilms.com" aria-label="lien">info@morozfilms.com</a>
             </li>
             <li>
-              <a href="tel:+11231231234" aria-label="lien">+1 (123) 123-1234</a>
+              <a href="tel:+18643847693" aria-label="lien">(864) 384-7693</a>
             </li>
           </ul>
           <p></p>
@@ -118,48 +118,59 @@
               <a href="mailto:info@morozfilms.com" aria-label="lien">Based in South Carolina</a>
             </li>
             <li>
-              <a href="https://www.instagram.com/morozfilms/" target="_blank" rel="noopener" aria-label="lien">View us on Instagram</a>
+              <a href="https://www.instagram.com/morozfilms/" target="_blank" rel="noopener" aria-label="lien" style="text-decoration: underline;">View on Instagram @morozfilms</a>
             </li>
           </ul>
         </div>
       </section>
       <section id="form">
         <h3 id="get-your-own-corner-of-paradise-in-the-laurentians">Inquire By Filling Out The Form Below!</h3>
-        <p>Preserve your unforgettable experience with digitally. Blah Blah Give me some info</p>
-        <form id="form-formspree" enctype="multipart/form-data">
+        <p>Preserve your unforgettable experience with digitally recorded footage by MorozFilms!</p>
+        <P style="font-size: 13px; text-align: right;"><label style="color: #c23e3e ;">*</label> indicates a required field</P>
+        <form id="form-formspree" enctype="multipart/form-data" action="https://formsubmit.co/info@morozfilms.com" method="POST">
           <fieldset>
             <label for="">Your Name <label style="color: #c23e3e ;">*</label></label>
-            <input type="text" id="Name" name="Submitter's Name" placeholder="First and Last Name Please" required="">
+            <input type="text" id="Name" name="Submitter's Name" placeholder="First and Last Name" required>
             <label for="">Partner's Name <label style="color: #c23e3e ;">*</label></label>
-            <input type="text" id="Name" name="Partener's Name" placeholder="First and Last Name Please" required="">
+            <input type="text" id="Name" name="Partener's Name" placeholder="First and Last Name" required>
             <!--label for="">Uhh <label style="color: #c23e3e ;">*</label></label>
-            <input type="text" id="Uhh" name="Uhh" placeholder="Uhh" required=""-->
+            <input type="text" id="Uhh" name="Uhh" placeholder="Uhh" required-->
             <label for="">Email <label style="color: #c23e3e ;">*</label></label>
-            <input type="email" id="Email" name="Email" placeholder="Or do you preffer phone as a method of contact? If so put &quot;Phone&quot;" required="">
+            <input type="email" id="Email" name="Email" required>
             <label for="">Phone <label style="color: #c23e3e ;">*</label></label>
-            <input type="tel" id="Phone" name="Phone" inputmode="numeric" placeholder="(123)123-1234 or 8641230923" required="">
-            <!--label for="preference">Preferred method of contact</label>
-            <select id="Phone" name="Preferred method of contact:" size="2" multiple>
-              <option value="volvo">Email</option>
-              <option value="saab">Phone</option>
-            </select-->
+            <input type="tel" id="Phone" name="Phone" inputmode="numeric" placeholder="(xxx)xxx-xxxx" required>
+            <label for="preference">Which one are you at the moment? <label style="color: #c23e3e ;">*</label></label>
+            <div style="margin-bottom: 2rem;">
+              <label class="radio-label">
+                  <input type="radio" name="radio" checked/>
+                  <span>We want to book with you!!</span>
+                </label>
+                <label class="radio-label">
+                  <input type="radio" name="radio"/>
+                  <span>We like you but want more info!</span>
+                </label>
+                <label class="radio-label">
+                  <input type="radio" name="radio"/>
+                  <span>Just gathering prices</span>
+                </label>
+              </div>
             <label for="Event Date">Wedding/Event Date: <label style="color: #c23e3e ;">*</label></label>
-            <input type="date" id="Event Date" name="Event Date:" required="">
+            <input type="date" id="Event Date" name="Event Date:" required>
             <label for="Venue">Location/Venue <label style="color: #c23e3e ;">*</label></label>
-            <input type="Venue" id="Venue" name="Venue" placeholder="Where is your special event taking place?" required="">
+            <input type="Venue" id="Venue" name="Venue" placeholder="Where is your special event taking place?" required>
             <label for="Photographer">Who is your photographer? <label style="color: #c23e3e ;">*</label></label>
-            <input type="Photographer" id="Photographer" name="Photographer" placeholder="If you need some suggestions, let me know!" required="">
+            <input type="Photographer" id="Photographer" name="Photographer" placeholder="If you need some suggestions, let me know!" required>
             <label for="Vision">Describe your vision <label style="color: #c23e3e ;">*</label></label>
-            <textarea id="Vision" name="Vision" rows="3" placeholder="How would you like me to shoot it? For example; &quot;Keep it romanic but also cinematic with an emotional touch&quot;" class="full" required=""></textarea>
+            <textarea id="Vision" name="Vision" rows="2" placeholder="How would you like me to shoot it?" class="full" required></textarea>
             <label for="Duration">Duration <label style="color: #c23e3e ;">*</label></label>
-            <select id="Duration" name="Duration" required="">
+            <select id="Duration" name="Duration" required>
               <option disabled selected value>None Selected</option>
               <option>All day</option>
               <option>8 Hours</option>
               <option>4 Hours</option>
             </select>
             <label for="Services">Service(s) <label style="color: #c23e3e ;">*</label></label>
-            <select id="Services" name="Services" required="">
+            <select id="Services" name="Services" required>
               <option disabled selected value>None Selected</option>
               <option>4k Video Cinematic</option>
               <option>4k Video + Vintage</option>
@@ -167,12 +178,24 @@
             </select>
             
             <label for="Reference">How did you hear about me? <label style="color: #c23e3e ;">*</label></label>
-            <input type="Reference" id="Reference" name="Reference" placeholder="Was it through a friend, one of our socials, or someother way?" required="">
+            <select id="Reference" name="Reference:" required>
+              <option disabled selected value>None Selected</option>
+              <option>Instagram</option>
+              <option>Facebook</option>
+              <option>Family/Friend</option>
+              <option>Another Vendor</option>
+              <option>Other</option>
+            </select>
             <label for="">Additional Notes</label>
-            <textarea id="Message" name="Message" rows="1" placeholder="What vendors are you working with or are there any other details you want to share? :&rpar;" class="full" required=""></textarea>
+            <textarea id="Message" name="Message" rows="1" placeholder="What vendors are you working with or are there any other details you want to share? :&rpar;" class="full" required></textarea>
+            <input type="text" name="_honey" style="display:none">
+            <input type="hidden" name="_subject" value="New Form Submission via morozfilms.com">
+            <input type="hidden" name="_next" value="https://morozfilms.com/thanks">
+            <input type="hidden" name="_cc" value="nineadvise@gmail.com">
+            <input type="hidden" name="_blacklist" value="spammy pattern, banned term, advertisments, graphic design">
+            <input type="hidden" name="_autoresponse" value="Thanks for your submission! We will be in contact with you shortly.">
           </fieldset>
           <button> Submit </button>
-          <input type="hidden" name="_cc" value="info@morozfilms.com">
         </form>
       </section>
     </main>
@@ -201,8 +224,8 @@
               <p>
                 <a href="mailto:info@morozfilms.com" aria-label="lien">info@morozfilms.com</a>
               </p>
-              <a href="tel:+11231231234" aria-label="lien">
-                <p> +1 (123) 123-123 </p>
+              <a href="tel:+18643847693" aria-label="lien">
+                <p> (864) 384-7693 </p>
               </a>
               <div class="socials">
                 <a href="https://www.facebook.com/morozfilms" target="_blank" aria-label="lien">
