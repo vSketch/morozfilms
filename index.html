@@ -7,7 +7,7 @@
     <meta name="description" content="Contact us to find out more about our services and prices. Lets begin documenting your journey.">
     <meta property="og:title" content="Moroz Films | Contact">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://morozfilms.com/contact/">
+    <meta property="og:url" content="https://morozfilms.com/">
     <meta property="og:site_name" content="Moroz Films">
     <meta name="theme-color" content="#fff">
     <meta property="og:location" content="en">
@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="./mv_files/css">
     <link rel="stylesheet" href="./mv_files/all.css">
     <script src="./mv_files/410f2f52c5.js.download" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <style media="all" id="fa-v4-font-face">
       @font-face {
         font-family: "FontAwesome";
@@ -84,10 +85,8 @@
         </a>
       </figure>
       <nav id="nav">
-        <!--a class="modeles" href="https://morozfilms.com//" aria-label="lien"> Models </a>
-        <a class="terrains" href="https://morozfilms.com//" aria-label="lien"> Land Plots </a>
-        <a class="carrieres" href="https://morozfilms.com//" aria-label="lien"> The Laurentides </a-->
-        <a class="active-link contact" href="https://morozfilms.com/contact/" aria-label="lien"> Contact </a>
+        <a class="active-link contact" href="https://morozfilms.com/" aria-label="lien"> Contact </a>
+        <a class="packages" href="https://morozfilms.com/packages" aria-label="lien"> Packages </a>
         <a style="text-transform: uppercase;" class="lang" href="tel:+18643847693" aria-label="lien">(864) 384-7693</a>
       </nav>
       <div class="burger-menu" onclick="toggleBurgerMenu(this);">
@@ -97,7 +96,13 @@
       </div>
     </header>
     <main>
-      <section id="intro" class="bg-right contact-right">
+      <section id="intro" class="bg-right contact-right" data-aos="fade-in"
+      data-aos-offset="200"
+      data-aos-delay="200"
+      data-aos-duration="1000"
+      data-aos-easing="ease-in"
+      data-aos-mirror="true"
+      data-aos-once="false">
         <figure class="video-container">
           <video rel="preload" autoplay="" loop="" muted="" playsinline="" src="./mv_files/mzfhero.mp4"></video>
         </figure>
@@ -124,8 +129,9 @@
         </div>
       </section>
       <section id="form">
-        <h3 id="get-your-own-corner-of-paradise-in-the-laurentians">Inquire By Filling Out The Form Below!</h3>
-        <p>Preserve your unforgettable experience with digital and film!</p>
+        <h3 id="fill out this form">Inquire By Filling Out The Form Below!</h3>
+        <p>Preserve your unforgettable experience with digitally recorded footage by MorozFilms!</p>
+        <p><a href="https://morozfilms.com/packages" style="font-size: 1rem; padding: .5rem 1.25rem; border: 1px solid #fff; display: inline-flex ; align-items: center; border-radius: 2rem; line-height: 1rem; color: #fff !important; background-color: #000; cursor: pointer; background-color: #fff; color: #000 !important; cursor: pointer;">View packages</a></p>
         <P style="font-size: 13px; text-align: right;"><label style="color: #c23e3e ;">*</label> indicates a required field</P>
         <form id="form-formspree" enctype="multipart/form-data" action="https://formsubmit.co/info@morozfilms.com" method="POST">
           <fieldset>
@@ -138,22 +144,7 @@
             <label for="">Email <label style="color: #c23e3e ;">*</label></label>
             <input type="email" id="Email" name="Email" required>
             <label for="">Phone <label style="color: #c23e3e ;">*</label></label>
-            <input type="tel" id="Phone" name="Phone" inputmode="numeric" placeholder="(xxx) xxx-xxxx" required>
-            <label for="preference">Which one are you at the moment? <label style="color: #c23e3e ;">*</label></label>
-            <div style="margin-bottom: 2rem;">
-              <label class="radio-label">
-                  <input type="radio" name="radio" checked/>
-                  <span>We want to book with you!!</span>
-                </label>
-                <label class="radio-label">
-                  <input type="radio" name="radio"/>
-                  <span>We like you but want more info!</span>
-                </label>
-                <label class="radio-label">
-                  <input type="radio" name="radio"/>
-                  <span>Just gathering prices</span>
-                </label>
-              </div>
+            <input type="tel" id="Phone" name="Phone" inputmode="numeric" placeholder="(xxx) xxx-xxxx" maxlength="14" required>
             <label for="Event Date">Wedding/Event Date: <label style="color: #c23e3e ;">*</label></label>
             <input type="date" id="Event Date" name="Event Date:" required>
             <label for="Venue">Location/Venue <label style="color: #c23e3e ;">*</label></label>
@@ -161,33 +152,40 @@
             <label for="Photographer">Who is your photographer? <label style="color: #c23e3e ;">*</label></label>
             <input type="Photographer" id="Photographer" name="Photographer" placeholder="If you need some suggestions, let me know!" required>
             <label for="Vision">Describe your vision <label style="color: #c23e3e ;">*</label></label>
-            <textarea id="Vision" name="Vision" rows="2" placeholder="How would you like me to shoot it?" class="full" required></textarea>
-            <label for="Duration">Duration <label style="color: #c23e3e ;">*</label></label>
-            <select id="Duration" name="Duration" required>
-              <option disabled selected value>None Selected</option>
-              <option>All day</option>
-              <option>8 Hours</option>
-              <option>4 Hours</option>
-            </select>
-            <label for="Services">Service(s) <label style="color: #c23e3e ;">*</label></label>
+            <textarea id="Vision" name="Vision" placeholder="How would you like me to shoot it? Romantic, Minimal, Vintage? Let me know how you want me to shoot it!" class="full" required></textarea>
+            <label for="Services">Packages <label style="color: #c23e3e ;">*</label></label>
             <select id="Services" name="Services" required>
               <option disabled selected value>None Selected</option>
-              <option>4k Video Cinematic</option>
-              <option>4k Video + Vintage</option>
-              <option>4k Video Tradiational</option>
+              <option>Simple</option>
+              <option>Classic</option>
+              <option>Premium</option>
             </select>
-            
             <label for="Reference">How did you hear about me? <label style="color: #c23e3e ;">*</label></label>
             <select id="Reference" name="Reference:" required>
               <option disabled selected value>None Selected</option>
               <option>Instagram</option>
               <option>Facebook</option>
-              <option>Family/Friend</option>
+              <option>Family / Friend</option>
               <option>Another Vendor</option>
               <option>Other</option>
             </select>
             <label for="">Additional Notes</label>
-            <textarea id="Message" name="Message" rows="2" placeholder="What vendors are you working with or are there any other details you want to share? :&rpar;" class="full" required></textarea>
+            <textarea id="Message" name="Message" class="full" placeholder="What vendors are you working with or are there any other details you want to share? :&rpar;" class="full" required></textarea>
+            <label for="preference">Let's get to know you - where are you in the planning process? <label style="color: #c23e3e ;">*</label></label>
+            <div style="margin-bottom: 2rem;">
+              <label class="radio-label">
+                <input type="radio" name="radio" checked/>
+                <span>We are ready to book with you!!</span>
+                </label>
+                <label class="radio-label">
+                  <input type="radio" name="radio"/>
+                  <span>We like your content but want more info!</span>
+                </label>
+                <label class="radio-label">
+                  <input type="radio" name="radio"/>
+                  <span>Just exploring options & gathering prices!</span>
+                </label>
+              </div>
             <input type="text" name="_honey" style="display:none">
             <input type="hidden" name="_subject" value="New Form Submission via morozfilms.com">
             <input type="hidden" name="_next" value="https://morozfilms.com/thanks">
@@ -208,7 +206,7 @@
         </div>
         <div class="img">
           <figure>
-            <img src="./mv_files/photofooter.png" alt="Photo Footer MorozFilms">
+            <img src="./mv_files/photofooter2.jpeg" alt="Photo Footer MorozFilms">
           </figure>
         </div>
       </div>
@@ -246,10 +244,8 @@
             </div-->
           </div>
           <nav class="nav">
-            <!--a class="modeles" href="https://morozfilms.com/modeles/" aria-label="lien"> Home </a>
-            <a class="terrains" href="https://morozfilms.com/terrains/" aria-label="lien"> Services </a>
-            <a class="carrieres" href="https://morozfilms.com/laurentides/" aria-label="lien"> Locations </a-->
-            <a class="active-link contact" href="https://morozfilms.com/contact/" aria-label="lien"> Contact </a>
+            <a class="active-link contact" href="https://morozfilms.com/" aria-label="lien"> Contact </a>
+            <a class="packages" href="https://morozfilms.com/packages" aria-label="lien"> Packages </a>
           </nav>
         </section>
       </div>
@@ -288,6 +284,10 @@
           }
         }
       });
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
     </script>
   </body>
 </html>
